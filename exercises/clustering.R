@@ -18,14 +18,14 @@ plot(tsne$Y,pch=labels+15, col=labels+1 )
 
 #visualise proteins with tsne
 tsne=Rtsne(t(prot),perplexity=30)
-plot(tsne$Y,pch='.')
+plot(tsne$Y,pch= '..')
 
 #cluster patients using k-means
 #TODO homework
 
 #cluster proteins using k-means
 km=kmeans(t(prot),centers=2) 
-plot(tsne$Y,pch='.',col=km$cluster)
+plot(tsne$Y, pch= '..', col=km$cluster)
 
 #find best number of clusters
 protDist=dist(t(prot))

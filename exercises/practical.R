@@ -47,7 +47,7 @@ genes=unique(de[['ID']])
 genes=genes[genes!=""]
 
 # compute all the genes and write it in a file
-write.table(genes,"degenes.txt",row.names=FALSE)
+write.table(genes, "degenes.txt", row.names=FALSE)
 # here created dedata check the code online
 
 # check the list of the genes in david using homo sapiens and official genes
